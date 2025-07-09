@@ -1,7 +1,35 @@
+# FinTracker AI
+FinScan AI is a modern, cross-platform mobile application built with React Native and Expo that simplifies personal finance management. It features a clean user interface, secure authentication, and a powerful AI-driven receipt scanner to automate transaction entry.
 
-## 🚀 Getting Started
+## ✨ Core Features
+- Secure Authentication: User sign-up, sign-in, and session management powered by Clerk.
+- Financial Dashboard: An at-a-glance view of your total balance, income, and expenses.
+- Transaction Management:
+    - Manual Entry: Easily add income or expense transactions with categories.
+    - AI Receipt Scanning: Take a picture of a receipt, and let Google's Gemini Pro Vision model intelligently extract the title, amount, and transaction type.
+    - Transaction History: A clear, scrollable list of all your past transactions.
+    - Delete Transactions: Easily remove transactions from your history.
+- Pull-to-Refresh: Keep your financial data up-to-date with a simple pull-down gesture.
+- Protected Routes: Ensures that only authenticated users can access the main application.
 
-Follow these instructions to get the project running on your local machine for development and testing purposes.
+  <p align="center">
+  <img src="https://github.com/user-attachments/assets/f75c34e6-2bcf-4c64-af1a-c9419046599a" alt="Dashboard" width="160"/>
+  <img src="https://github.com/user-attachments/assets/842010eb-a80d-4240-ae15-355483cefaa1" alt="Create Transaction" width="160"/>
+  <img src="https://github.com/user-attachments/assets/f17406f9-4372-473b-8f58-675f6df17ecf" alt="AI Scanner Page" width="160"/>
+  <img src="https://github.com/user-attachments/assets/5eb29aac-792d-40a3-a790-860c1360c3ed" alt="Camera View" width="160"/>
+  <img src="https://github.com/user-attachments/assets/04c73922-8317-4ae1-bf2a-e8775589f699" alt="Extracted Receipt" width="160"/>
+</p>
+
+
+
+  ## 🛠️ Technology Stack
+- Framework: React Native with Expo
+- Routing: Expo Router (File-based)
+- Authentication: @clerk/clerk-expo
+- AI Service: Google Gemini API for multimodal (image and text) analysis of receipts.
+- State Management: React Hooks (useState, useEffect) and Custom Hooks (useTransactions).
+- Local Storage: @react-native-async-storage/async-storage for caching receipt images.
+- API Communication: fetch API to interact with a custom backend.
 
 ### Prerequisites
 
