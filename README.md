@@ -50,9 +50,7 @@ FinScan AI is a modern, cross-platform mobile application built with React Nativ
 
 2.  **Install dependencies:**
     ```bash
-    npm install
-    # or
-    yarn install
+    npx expo start
     ```
 
 3.  **Set up environment variables:**
@@ -67,10 +65,10 @@ FinScan AI is a modern, cross-platform mobile application built with React Nativ
 
 4.  **Backend Service:**
     This project requires a backend service to handle transaction data. The backend must expose the following endpoints:
-    *   `GET /transactions?user_id=:id`: Fetches all transactions and a summary for a user.
-    *   `POST /transactions`: Creates a new transaction.
-    *   `DELETE /transactions/:id`: Deletes a specific transaction.
-    *   `POST /extract-receipt`: An endpoint that takes a base64 image and returns structured JSON data (`{ title, amount, type }`).
+    *   `GET /`: Fetches all transactions and a summary for a user.
+    *   `POST /`: Creates a new transaction.
+    *   `DELETE /`: Deletes a specific transaction.
+    *   `POST /`: An endpoint that takes a base64 image and returns structured JSON data (` title, amount, type `).
 
 5.  **Run the application:**
     ```bash
